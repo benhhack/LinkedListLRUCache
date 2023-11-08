@@ -1,8 +1,8 @@
 import threading
 
-from lru_decorator import LruCacheLLDecorator
+from lru_decorator import LruCacheDecorator
 
-cache_decorator = LruCacheLLDecorator(capacity=3)
+cache_decorator = LruCacheDecorator(capacity=3)
 
 
 @cache_decorator

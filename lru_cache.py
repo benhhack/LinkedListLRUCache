@@ -3,7 +3,7 @@ from typing import Union
 from node import Node
 
 
-class LruCacheLL:
+class LruCache:
     """
     Doubly linked list implementation of and LRU cache.
     """

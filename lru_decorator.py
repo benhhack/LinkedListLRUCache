@@ -1,15 +1,15 @@
 from functools import wraps
 
-from lru_cache import LruCacheLL
+from lru_cache import LruCache
 
 
-class LruCacheLLDecorator:
+class LruCacheDecorator:
     """
     Implementation of a linked list based LRU Cache decorator for single argument functions.
     """
 
     def __init__(self, capacity):
-        self.cache = LruCacheLL(capacity)
+        self.cache = LruCache(capacity)
 
     def __call__(self, func):
         @wraps(func)
